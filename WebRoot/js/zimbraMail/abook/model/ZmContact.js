@@ -2220,7 +2220,7 @@ ZmContact.NO_MAX_IMAGE_WIDTH = ZmContact.NO_MAX_IMAGE_HEIGHT = - 1;
 ZmContact.prototype.getImageUrl =
 function(maxWidth, maxHeight) {
 	if (this.getAttr(ZmContact.F_thumbnailPhoto)) {
-		return "data:;base64," + this.getAttr(ZmContact.F_thumbnailPhoto);
+		return "data:base64," + this.getAttr(ZmContact.F_thumbnailPhoto);
 	}
 
   	var image = this.getAttr(ZmContact.F_image);
